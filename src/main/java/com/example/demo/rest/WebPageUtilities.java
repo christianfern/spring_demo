@@ -5,9 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Rest controller for simple services that can be invoked from the web page.
+ */
 @RestController
 @RequestMapping("/Test")
-public class Test {
+public class WebPageUtilities {
 
     final String ADD = "+";
     final String SUBTRACT = "-";
