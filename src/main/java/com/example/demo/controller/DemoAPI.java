@@ -1,4 +1,4 @@
-package com.example.demo.rest;
+package com.example.demo.controller;
 
 import com.example.demo.pojo.Person;
 import com.example.demo.service.NoDBService;

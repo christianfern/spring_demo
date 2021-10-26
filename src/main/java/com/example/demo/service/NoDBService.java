@@ -19,10 +19,11 @@ public class NoDBService {
     }
 
     public Person generatePerson(){
-        Gender gender = random.nextInt(2) == 0 ? Gender.MALE : Gender.FEMALE;
-        Person person = new Person(faker.name().firstName(), faker.name().lastName(), random.nextInt(90 - 18) + 18, gender);
-        person.setOcupation(random.nextInt(10) < 7 ? faker.job().title() : null ); //70% chance they have a job
-        return person;
+        return new Person(faker.name().firstName(),
+                faker.name().lastName(),
+                random.nextInt(90 - 18) + 18,
+                random.nextInt(2) == 0 ? Gender.MALE : Gender.FEMALE,
+                random.nextInt(10) < 7 ? faker.job().title() : null );
     }
 
 }

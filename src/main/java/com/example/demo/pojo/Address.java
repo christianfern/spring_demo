@@ -1,13 +1,13 @@
 package com.example.demo.pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
-@AllArgsConstructor
+@Data
+@RequiredArgsConstructor
 public class Address {
-    @Getter @Setter private String street;
-    @Getter @Setter private String city;
-    @Getter @Setter private String state;
-    @Getter @Setter private String zipCode;
+    private final String street;
+    private final String city;
+    private final String state;
+    private final String zipCode;
 }
