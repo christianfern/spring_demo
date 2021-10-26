@@ -1,12 +1,14 @@
 package com.example.demo.pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
-@AllArgsConstructor
+@Data
+@RequiredArgsConstructor
 public class Person {
-    @Getter @Setter private String firstName;
-    @Getter @Setter private String lastName;
-    @Getter @Setter private int age;
+    private final String firstName;
+    private final String lastName;
+    private final int age;
+    private final Gender gender;
+    private final String occupation;
 }
